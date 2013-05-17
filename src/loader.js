@@ -123,7 +123,7 @@ function setupModuleLoader(window) {
            * @name angular.Module#factory
            * @methodOf angular.Module
            * @param {string} name service name
-           * @param {Function} providerFunction Function for creating new instance of the service.
+           * @param {Function|Array} providerFunction Function for creating new instance of the service.
            * @description
            * See {@link AUTO.$provide#factory $provide.factory()}.
            */
@@ -195,7 +195,7 @@ function setupModuleLoader(window) {
            * @name angular.Module#filter
            * @methodOf angular.Module
            * @param {string} name Filter name.
-           * @param {Function} filterFactory Factory function for creating new instance of filter.
+           * @param {Function|Array} filterFactory Factory function for creating new instance of filter.
            * @description
            * See {@link ng.$filterProvider#register $filterProvider.register()}.
            */
@@ -206,7 +206,7 @@ function setupModuleLoader(window) {
            * @name angular.Module#controller
            * @methodOf angular.Module
            * @param {string} name Controller name.
-           * @param {Function} constructor Controller constructor function.
+           * @param {Function|Array} constructor Controller constructor function.
            * @description
            * See {@link ng.$controllerProvider#register $controllerProvider.register()}.
            */
@@ -217,7 +217,7 @@ function setupModuleLoader(window) {
            * @name angular.Module#directive
            * @methodOf angular.Module
            * @param {string} name directive name
-           * @param {Function} directiveFactory Factory function for creating new instance of
+           * @param {Function|Array} directiveFactory Factory function for creating new instance of
            * directives.
            * @description
            * See {@link ng.$compileProvider#directive $compileProvider.directive()}.
